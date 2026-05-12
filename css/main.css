@@ -1,0 +1,147 @@
+/* Algemene stijl */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+  color: black;
+  line-height: 1.4;
+}
+
+/* Header */
+header {
+  background-color: teal;
+  color: white;
+  padding: 1rem;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.logo-title h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+/* Navigatiebalk */
+nav {
+  background: black;
+}
+
+nav ul {
+  list-style: none;           /* geen bullets */
+  margin: 0;
+  padding: 10px;
+  display: flex;              /* zet links naast elkaar */
+  justify-content: center;    /* centreren */
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: yellow;
+}
+/* Introductie: alleen foto + tekst naast elkaar en gecentreerd */
+#intro {
+  padding: 2rem;
+}
+
+.intro-container {
+  display: flex;
+
+  justify-content: center; /* centreert foto + tekst */
+  gap: 2rem;
+  flex-wrap: wrap; /* op mobiel netjes onder elkaar */
+}
+
+.profielfoto {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.intro-text {
+  max-width: 500px;
+  font-family: 'Georgia', serif;
+}
+
+.intro-text h2 {
+  margin-top: 0;
+  color: black;
+}
+
+.text-box h2 {
+  margin-top: 0;
+  color: teal;
+}
+/* Algemene stijl voor tekst-boxen */
+.text-box{
+  max-width: 800px;       /* breedte beperken zodat tekst niet te lang wordt */
+  margin: 0 auto 2rem;    /* centreren en ruimte onder elke box */
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: black;
+  color: white;
+}
+
+/* ====== Responsive layout ====== */
+
+/* Tablet */
+@media (max-width: 768px) {
+  nav ul {
+    flex-wrap: wrap; /* navigatie breekt netjes af */
+  }
+
+  .text-box {
+    max-width: 600px;
+    padding: 1.5rem;
+  }
+
+  .profile-section img {
+    max-width: 250px;
+  }
+}
+
+/* Smartphone */
+@media (max-width: 480px) {
+  nav ul {
+    flex-direction: column; /* navigatie onder elkaar */
+    align-items: center;
+  }
+
+  .text-box {
+    max-width: 100%;
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .profile-section img {
+    max-width: 200px; /* foto kleiner */
+  }
+
+  h1 {
+    font-size: 1.8rem; /* titel kleiner */
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+}

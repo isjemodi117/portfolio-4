@@ -1,0 +1,18 @@
+/* Contact sectie */
+#contact {
+  padding: 40px;
+  background: #f9f9f9;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.contact-container p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.contact-container i {
+  color: teal;
+  margin-right: 10px;
+}
